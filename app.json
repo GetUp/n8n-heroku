@@ -26,11 +26,19 @@
       },
       "PGSSLMODE": {
         "description": "SSL is required to connect to Postgres on Heroku",
-        "value": "no-verify"
+        "value": "prefer"
+      },
+      "DB_POSTGRESDB_SSL_CA_FILE": {
+        "description": "SSL is required to connect to Postgres on Heroku",
+        "value": "/tmp/rds-ca/aws-rds-ca-bundle.pem"
+      },
+     "B_POSTGRESDB_SSL_REJECT_UNAUTHORIZED": {
+        "description": "SSL is required to connect to Postgres on Heroku",
+        "value": "false"
       },
       "DATABASE_URL": {
         "description": "SSL is required to connect to Postgres on Heroku",
-        "value": "no-verify"
+        "value": ""
       }
     },
     "formation": {
